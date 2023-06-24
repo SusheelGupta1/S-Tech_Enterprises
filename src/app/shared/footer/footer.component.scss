@@ -1,170 +1,292 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-*{
-  padding:0%;
-  margin:0%;
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+
+footer { 
   box-sizing: border-box;
+  position: relative; 
+  margin: 5px 0px 0px 0px;
+  background-color:#080a1a;
+  color: #ffffff;
+  font-style: normal;
+  padding:4px 0 10px;
+  line-height:24px;
+  font-family: 'Tajawal', sans-serif;
+  word-break: normal;
+  border-radius: 10px;
+  box-shadow: 2px 6px 60px 20px rgba(0, 0, 0, 0.1);
+
 }
 
-.hero {
-  height: auto;
-  background: url("https://cdn.pixabay.com/photo/2020/04/08/16/32/keyboard-5017973_640.jpg")
-    left bottom no-repeat;
-  background-color: rgba(0, 0, 0, 0.747);
-  background-size: cover;
-  background-blend-mode: multiply;
-   /* background-attachment:fixed ;
-    activate when you put in your website (optional)
-  */
-  color: rgb(255, 255, 255);
-  padding: 30px 80px 30px 30px;
-}
-.hero .container{
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex: 1;
-}
-.flex{
-  display: flex;
-}
-.container__about{
-  margin-bottom: 30px;
+.row-footer {
+  padding: 3px 20px 3px 20px;
 }
 
-.container__about p{
-  margin-top: 10px;
-  max-width: 300px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
+.row-footer::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.container-pages{
-  column-gap: 30px;
+hr {
+  width: 50%;
+  border: none;
+  border-top: 0.1rem ridge rgba(100, 150, 173, 0.596);
 }
 
-.container-pages ul{
-  padding-top: 10px;
-  list-style: none;
-  line-height: 24px;
-}
-.container-pages ul a{
-  color: inherit;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-}
-.container-pages ul a:hover{
-  color: #017143;
-}
-footer .by{
-margin-top: 30px;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-footer .by p{
-  color: rgba(255, 255, 255, 0.605);
-  font-size: 14px;
-}
-.line__separete{
-  margin-top: 30px;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  z-index: 999;
-}
-.icons {
-  margin-top: 20px;
-  display: flex;
-  column-gap: 25px;
-  
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+.site-logo {
+  float: left;
+  width: 15%;
+  padding: 10px;
 }
 
-.icon1 {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+.site-logo span {
+  font-family: 'Oregano', cursive;
   font-size: 20px;
+}
+
+.main-nav {
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: -1px;
+  box-shadow: 2px 2px 60px 8px rgba(102, 98, 98, 0.5);
+}
+
+.main-nav li {
+  list-style: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  margin: -30px;
+  opacity: 0.5;
+}
+
+.main-nav li:hover {
+  opacity: 1;
+}
+
+.main-nav li span {
+  margin-left: 6.5px;
+}
+
+.main-nav li.item1 {
+  top: 0;
+  left: 0;
+  color: #00a9c7;
+}
+
+.main-nav li.item2 {
+  bottom: 0;
+  left: 25%;
+  color: red;
+}
+
+.main-nav li.item3 {
+  top: 0;
+  left: 50%;
+  color: yellowgreen;
+}
+
+.main-nav li.item4 {
+  bottom: 0;
+  left: 75%;
+  color: darkmagenta;
+}
+
+.site-links {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.site-links span{
+  font-family: 'Gruppo', cursive;
+}
+
+ul.list-links {
+  list-style-type: none;
+}
+
+ul.list-links li {
+  font-size: 14px;
+  margin-left: -38px;
+}
+
+.adr-email {
+  float: left;
+  width: 28%;
+  padding: 10px;
+}
+
+.adr-email span {
+  font-family: 'Gruppo', cursive;
+}
+
+.adr-email ul {
+  font-size: 14px;
+  list-style-type: none;
+  margin-left: -38px;
+}
+
+.location i {
+  margin-right: 11px;
+}
+
+.email a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: aqua;
+}
+.email:hover a {
+  color: #00a9c7;
+}
+
+.subscribe-form {
+  float: left;
+  margin-top: 50px;
+}
+
+.subscribe-form > input {
+  width: 200px;
+  background: rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  border-color: #013942;
+  color: gray;
+  font-size: 14px;
+  border: 0.1 ridge;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+  outline: 0;
+  padding: 6px 10px;
+}
+
+.subscribe-form > input:focus {
+  border-color: #00a9c7;
+  color: beige;
+}
+
+.subscribe-form > button {
+  display: inline-block;
+	background: #183d53;
+	color: rgb(223, 254, 255);
+	font-size: 14px;
+  border-radius: 6px;
+	border: 0.1 solid;
+  border-color: #080a1a;
+	outline: 0;
+  margin-left: -14px;
+  box-shadow: 2px 6px 10px 0 rgba(82, 82, 82, 0.1);
+	padding: 3px 5px;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+}
+
+.subscribe-form > button:hover {
+  background-color: #151e50;
+}
+
+.subscribe-form > p {
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+.follow-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.follow-icons li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.follow-icons li i {
+  font-size: 12px;
+  font-weight: 0;
   color: #fff;
-  border-radius: 50%;
-  outline: 2px solid #fff;
-  transition-property:
-      outline-offset, outline-color,
-      background-color;
-  transition-duration: .25s;
+}
+.follow-icons li span {
+  padding-right: 6px;
 }
 
-.icon1:hover {
-  outline-offset: 4px;
+.arrow {
+  visibility: visible;
+  padding-right: 15px;
+  position: relative;
+  animation: mymove 5s infinite;
 }
 
-.icon1:hover i {
-  animation: shake .25s;
+@keyframes mymove {
+  0%   {left: 0px;}
+  25%  {left: 15px;}
+  50%  {left: 0px}
+  75%  {left: 15px;}
+  100% {left: 0px;}
 }
 
-.icon--instagram:hover {
-  background-image: radial-gradient(circle at 30% 107%,
-          #fdf497 0%, #fdf497 5%,
-          #fd5949 45%, #d6249f 60%,
-          #285AEB 90%);
-  outline-color: #a02d76;
+.right-dis {
+  float: right;
 }
 
-.icon--twitter:hover {
-  background-color: #1da1f2;
-  outline-color: #1da1f2;
+.left-dis {
+  float: left;
 }
 
-.icon--linkedin:hover {
-  background-color: #0077b5;
-  outline-color: #0077b5;
-}
-
-.icon--github:hover {
-  background-color: #000000;
-  outline-color: #000000;
-}
-
-@keyframes shake {
-  10% {
-      transform: rotate(15deg);
+@media (max-width:900px)
+{
+  .subscribe-form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
   }
 
-  20% {
-      transform: rotate(-15deg);
+  .subscribe-form > p {
+    margin-left: -5px;
   }
 
-  30% {
-      transform: rotate(15deg);
-  }
-
-  40% {
-      transform: rotate(-15deg);
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .hero{
+  .site-logo {
+    float: left;
+    width: 28%;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
   }
 
-  .container__about h2{
-    font-size: 20px;
+  .main-nav {
+    top: 30%;
+    left: 12%;
   }
-  .container__about p{
+
+  .site-links {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .adr-email{
+    width: 35%;
+  }
+
+  .adr-email .email {
     font-size: 12px;
   }
-  .container__recentpages h2{
-    font-size: 20px;
+}
+
+@media (max-width:600px) {
+  .right-dis {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
   }
-  .container-pages ul a{
-    font-size: 12px;
+
+  .left-dis {
+    width: 100%;
+    text-align: center;
   }
-  footer .by p{
-    font-size: 12px;
-  }
-} 
+}

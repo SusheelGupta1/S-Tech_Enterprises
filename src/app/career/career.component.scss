@@ -1,0 +1,28 @@
+h1 {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  img {
+    height: 40px;
+  }
+  
+  .btn-submit {
+    background-color: #151515;
+    color: white;
+  }
+
+  .carrer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #fceeee 0%, rgba(32, 32, 32, 0.2) 50%, #202020 100%), url(https://media.istockphoto.com/id/1058262630/vector/creation-responsive-internet-website-for-multiple-platforms-building-mobile-interface-on.jpg?s=612x612&w=0&k=20&c=BwGASPtAVnQu9_l-g7R-jW9gRxCQsmSMtRsA-jDPQz0=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  color: whitesmoke;
+  }
+ 
